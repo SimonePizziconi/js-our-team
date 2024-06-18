@@ -44,3 +44,14 @@ for(let key in teamList){
     console.log("Il nome del membro del team è: " + teamList[key].name + " Il ruolo del membro del team è: " +teamList[key].role + " La stringa della foto di ogni membro del team è: " + teamList[key].image);
 };
 
+// Prendi elemento HTML
+const teamMembers = document.querySelectorAll(".team");
+
+for(let i = 0; i < teamList.length; i++){
+    // Stampare le stesse informazioni su DOM sottoforma di stringhe
+    teamMembers[i].innerHTML = (" Il nome del membro del team è: " + teamList[i].name + " Il ruolo del membro del team è: " + teamList[i].role + " La stringa della foto di ogni membro del team è: " + teamList[i].image);
+}
+
+
+
+
